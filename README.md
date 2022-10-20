@@ -1,6 +1,6 @@
 # Compute Canada Software stack
-To run 
-
+The container loads the AVX2 achitecture version of the stack by default. To load another architecture, for example avx512, set it in the envirionement of the container at startup with the `--env RSNT_ARCH=avx512`  
+option. The option is valid for all the container system flavors.
 ## Podman
 ```
 podman run  --security-opt label=disable    --rm   --device /dev/fuse --cap-add SYS_ADMIN  -it  -v /tmp:/tmp  --mount type=volume,source=cache1,destination=/cvmfs-cache  poquirion/cc_software_stack
