@@ -1,4 +1,4 @@
-# Compute Canada Software stack
+# Compute Canada Software Stack
 The container loads the AVX2 achitecture version of the stack by default. To load another architecture, for example avx512, set it in the envirionement of the container at startup with the `--env RSNT_ARCH=avx512`  
 option. The option is valid for all the container system flavors.
 ## Podman
